@@ -15,6 +15,7 @@ class UsersController < ApplicationController
   # GET /users/new
   def new
     @user = User.new
+    redirect_to root_path
   end
 
   # GET /users/1/edit
@@ -35,6 +36,7 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+    redirect_to root_path
   end
 
   # PATCH/PUT /users/1
