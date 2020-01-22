@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'carrierwave'
 gem 'faker'
+gem 'fog-aws'
+gem 'figaro'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
